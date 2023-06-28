@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "lib": [
+            "DOM",
+            "DOM.Iterable",
+            "esnext"
+        ],
+        "module": "esnext",
+        "target": "es2020",
+        "moduleResolution": "node",
+        "jsx": "react"
+    }
+}
