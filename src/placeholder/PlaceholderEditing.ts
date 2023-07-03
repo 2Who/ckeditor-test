@@ -70,7 +70,7 @@ class PlaceholderEditing extends Plugin {
         });
 
         // Helper method for both downcast converters.
-        function createPlaceholderView(modelItem, viewWriter) {
+        function createPlaceholderView(modelItem: any, viewWriter: any) {
             const name = modelItem.getAttribute('name');
 
             const placeholderView = viewWriter.createContainerElement('span', {

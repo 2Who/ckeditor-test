@@ -1,7 +1,7 @@
 import { Command } from '@ckeditor/ckeditor5-core';
 
 class PlaceholderCommand extends Command {
-    execute({ value }) {
+    execute({ value }: any) {
         const editor = this.editor;
         const selection = editor.model.document.selection;
 
@@ -9,7 +9,7 @@ class PlaceholderCommand extends Command {
             // Create a <placeholder> element with the "name" attribute (and all the selection attributes)...
             const placeholder = writer.createElement('placeholder', {
                 ...Object.fromEntries(selection.getAttributes()),
-                name: value
+                name: value as any
             });
 
             // ... and insert it into the document. Put the selection on the inserted element.

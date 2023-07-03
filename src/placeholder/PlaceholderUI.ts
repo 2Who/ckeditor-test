@@ -39,7 +39,7 @@ class PlaceholderUI extends Plugin {
     }
 }
 
-function getDropdownItemsDefinitions(placeholderNames) {
+function getDropdownItemsDefinitions(placeholderNames: any) {
     const itemDefinitions = new Collection();
 
     for (const name of placeholderNames) {
